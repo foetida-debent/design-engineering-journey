@@ -6,6 +6,7 @@
   --color-muted: #6b6b6b;
   --color-accent: #ff3300;
   --color-border: #2a2a2a;
+  --color-surface: #1a1a1a;
 
   --space-sm: 1rem;
   --space-md: 2rem;
@@ -86,8 +87,10 @@ nav {
   flex-direction: column;
   padding: var(--space-md);
   flex: 1;
-  transition: border-color 0.4s ease;
+  transition: all 0.4s ease;
 }
 .card:hover {
-  border-color: var(--color-accent);
+  background-color: var(--color-surface);
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
