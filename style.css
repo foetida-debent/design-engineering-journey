@@ -5,7 +5,7 @@
   --color-text-secondary: #c0c0c0;
   --color-muted: #6b6b6b;
   --color-accent: #ff3300;
-  --color-border: #2a2a2a;
+  --color-border: #3a3a3a;
   --color-surface: #1a1a1a;
 
   --space-sm: 1rem;
@@ -14,6 +14,8 @@
 
   --font-hero: 4rem;
   --font-h2: 3rem;
+
+  --colo-btn: var(--color-accent)
 }
 body {
   margin: 0;
@@ -103,7 +105,7 @@ h2 {
   }
 }
 .card-wide {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 
