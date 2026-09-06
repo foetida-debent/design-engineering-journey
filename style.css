@@ -14,8 +14,6 @@
 
   --font-hero: 4rem;
   --font-h2: 3rem;
-
-  --colo-btn: var(--color-accent)
 }
 body {
   margin: 0;
@@ -26,6 +24,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  line-height: 1.6;
 }
 main {
   flex: 1;
@@ -45,17 +44,21 @@ nav a:hover {
   text-decoration: underline;
 }
 .hero {
-  padding: var(--space-lg) var(--space-md);
+  padding: var(--space-lg) var(--space-md) var(--space-md) var(--space-md);
 }
 
 h1 {
   font-size: var(--font-hero);
   margin-bottom: var(--space-sm);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
 }
 
 .hero p {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-md);
+  line-height: 1.7;
 }
 nav {
   display: flex;
@@ -72,8 +75,8 @@ nav {
   background: var(--color-white);
   color: var(--color-bg);
 }
-.projects{
-  padding: var(--space-lg) var(--space-md);
+.projects {
+  padding: var(--space-md);
 }
 h2 {
   font-size: var(--font-h2);
@@ -105,27 +108,3 @@ h2 {
     font-size: 2rem;
   }
 }
-.card-wide {
-  grid-column: span 2;
-}
-
-
-/* test for flex
-
-.block {
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
-  background: rgb(214, 162, 162);
-  flex: 1;
-  padding: 1rem;
-}
-.test {
-  margin: var(--space-md);
-}
-.flex-test {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-}
-*/
