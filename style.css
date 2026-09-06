@@ -18,6 +18,7 @@
   --colo-btn: var(--color-accent)
 }
 body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   font-family: sans-serif;
   background: var(--color-bg);
