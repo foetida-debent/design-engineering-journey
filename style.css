@@ -15,9 +15,11 @@
   --font-hero: 4rem;
   --font-h2: 3rem;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   display: flex;
@@ -35,6 +37,10 @@ header {
   align-items: center;
   padding: var(--space-sm);
   border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-bg);
 }
 nav a {
   text-decoration: none;
@@ -94,18 +100,24 @@ h2 {
   flex-direction: column;
   padding: var(--space-md);
   transition: all 0.3s ease;
-}
+
   &:hover {
   background-color: var(--color-surface);
   border-color: transparent;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
 }
 
 .badge {
   position: absolute;
   top: 0;
   right: 0;
-  background: var(--color-accent)
+  background: var(--color-accent);
+  color: var(--color-text);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75;
+  border-radius: 2rem;
   }
 
 @media (max-width: 600px) {
